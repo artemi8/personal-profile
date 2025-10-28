@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <header class="hero" id="top">
+    <nav class="top-nav">
+      <span class="logo">AI Engineer</span>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-toggle__icon" aria-hidden="true"></span>
+      </button>
+    </nav>
+    <div class="hero__content">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1 id="heroName">Alex Taylor</h1>
+      <p class="subtitle" id="heroSubtitle">AI Engineer crafting intelligent products with 4 years of industry experience.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#projects">Explore Projects</a>
+        <a class="btn btn--secondary" href="#contact">Get in touch</a>
+      </div>
+      <dl class="quick-facts" aria-label="Snapshot of experience">
+        <div>
+          <dt>Experience</dt>
+          <dd>4+ years in applied AI</dd>
+        </div>
+        <div>
+          <dt>Education</dt>
+          <dd>MSc Artificial Intelligence<br />University of Nottingham</dd>
+        </div>
+        <div>
+          <dt>Focus</dt>
+          <dd>Responsible machine learning & human-centered AI</dd>
+        </div>
+      </dl>
+    </div>
+    <div class="hero__visual" aria-hidden="true">
+      <div class="orb orb--one"></div>
+      <div class="orb orb--two"></div>
+      <div class="orb orb--three"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <div class="section__header">
+        <span class="section__eyebrow">About</span>
+        <h2>Building thoughtful AI experiences</h2>
+        <p>I love shaping ideas into resilient machine learning systems—from research-driven prototypes to production-grade platforms. I translate academic rigor into products that feel effortless.</p>
+      </div>
+      <div class="about-grid">
+        <article class="about-card reveal">
+          <h3>What I do best</h3>
+          <p>Design end-to-end ML solutions, create evaluation frameworks, and lead teams through the ambiguity of applied AI.</p>
+          <ul class="tag-list" id="coreStrengths"></ul>
+        </article>
+        <article class="about-card reveal">
+          <h3>Philosophy</h3>
+          <p>Great AI balances curiosity with responsibility. I’m passionate about inclusive datasets, transparent models, and meaningful user feedback loops.</p>
+        </article>
+        <article class="about-card reveal">
+          <h3>Currently exploring</h3>
+          <p>Generative agents, retrieval-augmented systems, and evaluation tooling that help teams ship trust-worthy AI faster.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section__header">
+        <span class="section__eyebrow">Capabilities</span>
+        <h2>Technical skills that ship</h2>
+        <p>A spectrum of tools and frameworks I wield to build experiences that are smart, resilient, and scalable.</p>
+      </div>
+      <div class="skills-grid" id="skillsGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section" id="timeline">
+      <div class="section__header">
+        <span class="section__eyebrow">Journey</span>
+        <h2>Impact in motion</h2>
+        <p>Milestones that shaped my craft across startups and research labs.</p>
+      </div>
+      <ol class="timeline" id="timelineList" aria-live="polite"></ol>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section__header">
+        <span class="section__eyebrow">Projects</span>
+        <h2>Selected builds from GitHub</h2>
+        <p>Recent experiments and production-ready AI projects. Repositories sync automatically from GitHub, so there’s always something fresh.</p>
+      </div>
+      <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
+      <div class="github-note" id="githubNote" role="status"></div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="section__header">
+        <span class="section__eyebrow">Connect</span>
+        <h2>Let’s build the future</h2>
+        <p>Reach out for collaboration, mentoring, or to chat about your next AI initiative.</p>
+      </div>
+      <div class="contact-card">
+        <p>Email: <a href="mailto:hello@alextaylor.ai">hello@alextaylor.ai</a></p>
+        <p>GitHub: <a id="githubLink" href="https://github.com/" target="_blank" rel="noreferrer noopener">github.com/</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/" target="_blank" rel="noreferrer noopener">linkedin.com/in/</a></p>
+      </div>
+    </section>
+  </main>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll back to top">↑</button>
+
+  <footer class="footer">
+    <p>Crafted with curiosity &middot; © <span id="year"></span> Alex Taylor</p>
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
